@@ -1,0 +1,51 @@
+{
+  "name": "YogurtProgress",
+  "type": "object",
+  "properties": {
+    "yogurtPoints": {
+      "type": "number",
+      "description": "Total yogurt points earned by clicking"
+    },
+    "totalClicks": {
+      "type": "number", 
+      "description": "Total number of clicks made"
+    },
+    "currentFlavor": {
+      "type": "string",
+      "description": "Currently selected yogurt flavor"
+    },
+    "unlockedFlavors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Array of unlocked yogurt flavors"
+    },
+    "upgrades": {
+      "type": "object",
+      "properties": {
+        "spoon": {
+          "type": "number",
+          "description": "Number of spoon upgrades owned"
+        },
+        "mixer": {
+          "type": "number", 
+          "description": "Number of mixer upgrades owned"
+        },
+        "machine": {
+          "type": "number",
+          "description": "Number of yogurt machine upgrades owned"
+        }
+      }
+    },
+    "lastSaved": {
+      "type": "string",
+      "description": "Timestamp of last save"
+    }
+  },
+  "required": [
+    "yogurtPoints",
+    "totalClicks",
+    "currentFlavor"
+  ]
+}
